@@ -5,12 +5,11 @@ HEADER = 64
 PORT = 5050
 SERVER = socket.gethostbyname(socket.gethostname())
 ADDR = (SERVER, PORT)
-STD_FORMAT_CONVERSION: str = 'utf-8'
+STD_FORMAT_CONVERSION = 'utf-8'
 
-# STANDARD AND COMMONS MESSAGES OF LOGS
-START_STATUS_MSG: str = "[STARTING] server is starting..."
-DISCONNECTED_MESSAGE: str = "!DISCONNECTED"
-STD_LISTENING_MESSAGE: str = f"[LISTENING] Server is listening on {SERVER}"
+START_STATUS_MSG = "[STARTING] server is starting..."
+DISCONNECTED_MESSAGE = "!DISCONNECTED"
+STD_LISTENING_MESSAGE = f"[LISTENING] Server is listening on {SERVER}"
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
